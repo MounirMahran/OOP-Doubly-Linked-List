@@ -18,13 +18,18 @@ int main()
     MydblLinkedList.InsertAtBeginning(2);
     MydblLinkedList.InsertAtBeginning(1);
 
-    cout << "After Insertion" << endl;
-    if (MydblLinkedList.IsEmpty()) cout << "List is empty" << endl;
-    else cout << "List is not empty" << endl;
+    cout << "\nAfter Insertion" << endl;
+    if (MydblLinkedList.IsEmpty()) cout << "\nList is empty" << endl;
+    else cout << "\nList is not empty" << endl;
 
     cout << "\nLinked List Content:\n";
     MydblLinkedList.PrintList();
 
+    cout << "\nClearing List" << endl;
+    MydblLinkedList.Clear();
+
+    if (MydblLinkedList.IsEmpty()) cout << "\nList is empty" << endl;
+    else cout << "\nList is not empty" << endl;
    /* clsDblLinkedList<int>::Node* N1 = MydblLinkedList.Find(2);
 
     if (N1 != NULL)
