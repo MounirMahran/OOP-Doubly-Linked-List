@@ -233,5 +233,15 @@ public:
 
         return GetNode(Index)->Value;
     }
+
+    bool UpdateItem(short Index, T NewValue) {
+       Node* N1 = GetNode(Index);
+
+       if (N1 != NULL) {
+           N1->Value = NewValue;
+           return true;
+       }
+       else return false;
+    }
 };
 

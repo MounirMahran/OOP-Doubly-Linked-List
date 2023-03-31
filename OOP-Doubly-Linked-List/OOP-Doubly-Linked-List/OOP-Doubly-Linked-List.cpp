@@ -80,7 +80,24 @@ int main()
     cout << "\nNode Value is: "<< N1->Value << endl;*/
 
     //GetItem
-    cout << "\nValue of node at index 2: " << MydblLinkedList.GetItem(2) << endl;
+   /* cout << "\nValue of node at index 2: " << MydblLinkedList.GetItem(2) << endl;
+   */
+
+    //Update Item
+    cout << "\nUpdate Item at index 2" << endl;
+    MydblLinkedList.UpdateItem(2, 12);
+    MydblLinkedList.PrintList();
+    cout << endl;
+
+
+
+
+
+
+
+
+
+
 
 
     system("pause>0");
