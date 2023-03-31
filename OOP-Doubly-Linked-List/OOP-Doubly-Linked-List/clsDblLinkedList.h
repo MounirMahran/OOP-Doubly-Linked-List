@@ -190,5 +190,21 @@ public:
 
 
     }
+
+    Node* GetNode(short Index) {
+        Node* CurrentNode = Head;
+
+        if (Index < 0 || Index > _Size - 1) {
+            return NULL;
+        }
+
+        for (short i = 0; i < _Size; i++) {
+            if (i == Index) {
+                return CurrentNode;
+            }
+            CurrentNode = CurrentNode->Next;
+        }
+        return NULL;
+    }
 };
 

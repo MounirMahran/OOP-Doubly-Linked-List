@@ -64,10 +64,15 @@ int main()
 
    if (MydblLinkedList.IsEmpty()) cout << "\nList is empty" << endl;
    else cout << "\nList is not empty" << endl;*/
-
-    cout << "\nReverse List: " << endl;
+   /* cout << "\nReverse List: " << endl;
     MydblLinkedList.Reverse();
-    MydblLinkedList.PrintList();
+    MydblLinkedList.PrintList();*/
+
+    clsDblLinkedList <int>::Node* N1;
+
+    N1 = MydblLinkedList.GetNode(0);
+
+    cout << "\nNode Value is: "<< N1->Value << endl;
 
     system("pause>0");
 
