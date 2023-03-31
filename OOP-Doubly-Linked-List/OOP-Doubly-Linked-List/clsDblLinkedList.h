@@ -243,5 +243,16 @@ public:
        }
        else return false;
     }
+
+    bool InsertAfter(short Index, T Value) {
+        Node* N1 = GetNode(Index);
+
+        if (N1 != NULL) {
+            InsertAfter(N1, Value);
+            return true;
+        }
+
+        return false;
+    }
 };
 

@@ -84,14 +84,16 @@ int main()
    */
 
     //Update Item
-    cout << "\nUpdate Item at index 2" << endl;
+   /* cout << "\nUpdate Item at index 2" << endl;
     MydblLinkedList.UpdateItem(2, 12);
     MydblLinkedList.PrintList();
+    cout << endl;*/
+
+    //Insert After By Index
+    cout << "Inserting 9 after node at index 3" << endl;
+    MydblLinkedList.InsertAfter(3, 9);
+    MydblLinkedList.PrintList();
     cout << endl;
-
-
-
-
 
 
 
