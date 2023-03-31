@@ -170,5 +170,25 @@ public:
     void Clear() {
         while (_Size > 0) DeleteLastNode();
     }
+
+    void Reverse() {
+        Node* CurrentNode = Head;
+        Node* TempNode = nullptr;
+
+        while (CurrentNode != nullptr) {
+            TempNode = CurrentNode->Previous;
+            
+            CurrentNode->Previous = CurrentNode->Next;
+            CurrentNode->Next = TempNode;
+
+            CurrentNode = CurrentNode->Previous;
+        }
+
+        if (TempNode != nullptr) {
+            Head = TempNode->Previous;
+        }
+
+
+    }
 };
 

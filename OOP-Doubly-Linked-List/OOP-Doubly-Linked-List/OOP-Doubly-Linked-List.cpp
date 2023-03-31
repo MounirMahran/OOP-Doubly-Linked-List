@@ -9,8 +9,8 @@ int main()
 
     clsDblLinkedList <int> MydblLinkedList;
 
-    if (MydblLinkedList.IsEmpty()) cout << "List is empty" << endl;
-    else cout << "List is not empty" << endl;
+    /*if (MydblLinkedList.IsEmpty()) cout << "List is empty" << endl;
+    else cout << "List is not empty" << endl;*/
 
     MydblLinkedList.InsertAtBeginning(5);
     MydblLinkedList.InsertAtBeginning(4);
@@ -18,18 +18,11 @@ int main()
     MydblLinkedList.InsertAtBeginning(2);
     MydblLinkedList.InsertAtBeginning(1);
 
-    cout << "\nAfter Insertion" << endl;
-    if (MydblLinkedList.IsEmpty()) cout << "\nList is empty" << endl;
-    else cout << "\nList is not empty" << endl;
-
-    cout << "\nLinked List Content:\n";
+    cout << "\nList Content: " << endl;
     MydblLinkedList.PrintList();
 
-    cout << "\nClearing List" << endl;
-    MydblLinkedList.Clear();
 
-    if (MydblLinkedList.IsEmpty()) cout << "\nList is empty" << endl;
-    else cout << "\nList is not empty" << endl;
+   
    /* clsDblLinkedList<int>::Node* N1 = MydblLinkedList.Find(2);
 
     if (N1 != NULL)
@@ -59,8 +52,22 @@ int main()
     MydblLinkedList.PrintList();
     
     cout << "\nSize of the list is: " << MydblLinkedList.Size() << endl;*/
+    /*cout << "\nAfter Insertion" << endl;
+   if (MydblLinkedList.IsEmpty()) cout << "\nList is empty" << endl;
+   else cout << "\nList is not empty" << endl;
 
+   cout << "\nLinked List Content:\n";
+   MydblLinkedList.PrintList();
 
+   cout << "\nClearing List" << endl;
+   MydblLinkedList.Clear();
+
+   if (MydblLinkedList.IsEmpty()) cout << "\nList is empty" << endl;
+   else cout << "\nList is not empty" << endl;*/
+
+    cout << "\nReverse List: " << endl;
+    MydblLinkedList.Reverse();
+    MydblLinkedList.PrintList();
 
     system("pause>0");
 
