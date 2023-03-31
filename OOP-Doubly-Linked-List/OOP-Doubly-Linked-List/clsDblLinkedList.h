@@ -206,5 +206,32 @@ public:
         }
         return NULL;
     }
+
+    T GetItem(short Index) {
+
+        /*
+                Node* CurrentNode = Head;
+
+        if (Index < 0 || Index > _Size - 1) {
+            return NULL;
+        }
+
+        for (short i = 0; i < _Size; i++) {
+            if (i == Index) {
+                return CurrentNode->Value;
+            }
+            CurrentNode = CurrentNode->Next;
+        }
+
+        return NULL;*/
+
+       /* clsDblLinkedList <int>::Node* N1;
+
+        N1 = GetNode(Index);
+
+        return N1->Value;*/
+
+        return GetNode(Index)->Value;
+    }
 };
 

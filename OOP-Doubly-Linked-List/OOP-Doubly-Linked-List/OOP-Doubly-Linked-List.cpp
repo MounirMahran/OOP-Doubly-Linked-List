@@ -20,9 +20,9 @@ int main()
 
     cout << "\nList Content: " << endl;
     MydblLinkedList.PrintList();
+    cout << endl;
 
-
-   
+   //Basic Operations
    /* clsDblLinkedList<int>::Node* N1 = MydblLinkedList.Find(2);
 
     if (N1 != NULL)
@@ -52,6 +52,8 @@ int main()
     MydblLinkedList.PrintList();
     
     cout << "\nSize of the list is: " << MydblLinkedList.Size() << endl;*/
+
+   //Clear List
     /*cout << "\nAfter Insertion" << endl;
    if (MydblLinkedList.IsEmpty()) cout << "\nList is empty" << endl;
    else cout << "\nList is not empty" << endl;
@@ -64,15 +66,22 @@ int main()
 
    if (MydblLinkedList.IsEmpty()) cout << "\nList is empty" << endl;
    else cout << "\nList is not empty" << endl;*/
+
+   //Reverse List
    /* cout << "\nReverse List: " << endl;
     MydblLinkedList.Reverse();
     MydblLinkedList.PrintList();*/
 
-    clsDblLinkedList <int>::Node* N1;
+  //GetNode
+  /*  clsDblLinkedList <int>::Node* N1;
 
     N1 = MydblLinkedList.GetNode(0);
 
-    cout << "\nNode Value is: "<< N1->Value << endl;
+    cout << "\nNode Value is: "<< N1->Value << endl;*/
+
+    //GetItem
+    cout << "\nValue of node at index 2: " << MydblLinkedList.GetItem(2) << endl;
+
 
     system("pause>0");
 
